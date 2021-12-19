@@ -1,0 +1,10 @@
+<div class="container">
+    <counter (counterEvent)="showCircle($event)"></counter>
+    <stepsize (counterEvent)="showCircle($event)"></stepsize>
+</div>
+<span *ngIf="show" 
+        id="circle" 
+        class="circle" 
+        [style.left]="xleft +'px'" 
+        [style.top]="ytop + 'px'" 
+        (mouseup)="showCircle($event)"></span>

@@ -1,0 +1,13 @@
+<div class="step-size-container">
+  <h3 class="step-size">
+    {{ stepSize }}
+  </h3>
+  <button
+    class="increment-step-size" 
+    (mousedown)="incrementStepSize($event)"
+  >Step size +</button>
+  <button 
+    class="decrement-step-size" 
+    (mousedown)="decrementStepSize($event)"
+  >Step size -</button>
+</div>

@@ -1,0 +1,13 @@
+<div class="counter-container">
+  <h1 class="counter">
+    {{ counter }}
+  </h1>
+  <button
+    class="increment" 
+    (mousedown)="increment($event)"
+  >Increment</button>
+  <button 
+    class="decrement" 
+    (mousedown)="decrement($event)"
+  >Decrement</button>
+</div>
